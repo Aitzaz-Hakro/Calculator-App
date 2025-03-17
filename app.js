@@ -11,6 +11,7 @@ function appendNumber(num) {
 
 
 
+
 // var div = document.createElement('div');
 //   div.innerHTML = 1;
 //   document.body.appendChild(div);
