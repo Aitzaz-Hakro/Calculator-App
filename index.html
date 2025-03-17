@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!--Calculator app  -->
+
+        <h1>Calculator</h1>
+        <div class="container">
+            <input type="number" id="input" class="input" placeholder="0">
+            <div class="keypad">
+                <button class="keybtn"  id="keybtn" onclick="clearInput()">C</button>
+                <button class="keybtn" id="keybtn"  onclick="appendNumber(7)">7</button>
+                <button class="keybtn" id="keybtn"  onclick="appendNumber(8)">8</button>
+                <button  class="keybtn" id="keybtn" onclick="appendNumber(9)">9</button>
+                <button class="keybtn"  id="keybtn" onclick="appendOperator('/')">/</button> <br>
+                <button  class="keybtn" id="keybtn" onclick="appendNumber(4)">4</button>
+                <button  class="keybtn" id="keybtn" onclick="appendNumber(5)">5</button>
+                <button  class="keybtn" id="keybtn" onclick="appendNumber(6)">6</button>
+                <button class="keybtn"  id="keybtn" onclick="appendOperator('*')">*</button> <br>
+                <button class="keybtn"  id="keybtn" onclick="appendNumber(1)">1</button>
+                <button class="keybtn"  id="keybtn" onclick="appendNumber(2)">2</button>
+                <button  class="keybtn" id="keybtn" onclick="appendNumber(3)">3</button>
+                <button  class="keybtn" id="keybtn" onclick="appendOperator('-')">-</button><br>
+                <button  class="keybtn" id="keybtn" onclick="appendNumber(0)">0</button>
+                <button  class="keybtn" id="keybtn" onclick="appendOperator('.')">.</button>
+                <button  class="keybtn" id="keybtn" onclick="calculate()">=</button>
+                <button class="keybtn"  id="keybtn" onclick="appendOperator('+')">+</button>
+            </div>
+        </div>
+            
+    <script src="app.js"></script>
+</body>
+</html>

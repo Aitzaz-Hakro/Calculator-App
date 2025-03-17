@@ -1,0 +1,21 @@
+.container{
+    background-color: aqua;
+    width: 50%;
+    height: 300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.input{
+ background-color: bisque;
+ width: 100%;
+ 
+}
+.keypad{
+    width: 100%;
+    background-color: blue;
+}
+.keybtn{
+    color: tomato;
+    width: 15%;
+    background-color: black;
+}
