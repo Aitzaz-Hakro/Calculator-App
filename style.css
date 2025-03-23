@@ -1,21 +1,101 @@
-.container{
-    background-color: aqua;
-    width: 50%;
-    height: 300px;
-    margin: 0 auto;
-    padding: 0 20px;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
 }
-.input{
- background-color: bisque;
- width: 100%;
- 
+
+.calculator {
+    width: 320px;
+    border: 3px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.keypad{
-    width: 100%;
-    background-color: blue;
+
+.display {
+    height: 80px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+    font-size: 24px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
 }
-.keybtn{
-    color: tomato;
-    width: 15%;
-    background-color: black;
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.key {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #1a936f;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    user-select: none;
+    transition: all 0.2s ease;
+}
+
+.key:hover {
+    background-color: #e6ffef;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(26, 147, 111, 0.3);
+    border-color: #0c7b5a;
+}
+
+.key:active {
+    background-color: #cdffd9;
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(26, 147, 111, 0.3);
+}
+
+.equal {
+    grid-column: span 2;
+}
+
+.equal:hover {
+    background-color: #d6f5e8;
+}
+
+.ca {
+    grid-column: span 1;
+}
+
+.ca:hover, .key:nth-child(19):hover {
+    background-color: #ffebeb;
+    border-color: #cc0000;
+    box-shadow: 0 2px 5px rgba(204, 0, 0, 0.3);
+}
+
+/* Different colors for operators */
+.key:nth-child(9),
+.key:nth-child(10),
+.key:nth-child(14),
+.key:nth-child(15) {
+    background-color: #f0f8ff;
+}
+
+.key:nth-child(9):hover,
+.key:nth-child(10):hover,
+.key:nth-child(14):hover,
+.key:nth-child(15):hover {
+    background-color: #d0e8ff;
+    border-color: #0066cc;
+    box-shadow: 0 2px 5px rgba(0, 102, 204, 0.3);
 }
